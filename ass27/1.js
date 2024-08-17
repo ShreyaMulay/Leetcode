@@ -1,0 +1,1 @@
+// 1.Write a program which checks whether 15th bit is On or OFF.
