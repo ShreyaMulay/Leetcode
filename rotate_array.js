@@ -27,10 +27,6 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var rotate = function(nums, k) {
-    // console.log("nums :",nums)
-
-    // console.log("k :",k)
-
     if(k <= 0)
     {
         return
@@ -39,8 +35,6 @@ var rotate = function(nums, k) {
     let arrlength = nums.length;
     let lastele = nums[arrlength - 1];
 
-    console.log("lastele :",lastele)
-
     for(let i = arrlength-1 ;i > 0; i--)
     {
         nums[i] = nums[i - 1];
@@ -48,8 +42,6 @@ var rotate = function(nums, k) {
     }   
     nums[0] = lastele;
 
-    // console.log("aft nums :  :"+nums)     
-    
     rotate(nums,k-1) 
 
     return nums;  
